@@ -60,3 +60,107 @@ a {
 a:hover {
     text-decoration: underline;
 }
+/* Default styles (Desktop and larger screens) */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+  }
+  
+  header {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0;
+  }
+  
+  main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+  }
+  
+  .product {
+    background-color: white;
+    margin: 10px;
+    padding: 15px;
+    border-radius: 8px;
+    width: 30%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px;
+  }
+  
+  /* Media Query for Tablets (768px to 1024px) */
+  @media (max-width: 1024px) {
+    .product {
+      width: 45%; /* Adjust product width to fit 2 products per row */
+    }
+  
+    nav {
+      flex-direction: column;
+    }
+  
+    main {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  
+  /* Media Query for Mobile (up to 767px) */
+  @media (max-width: 767px) {
+    header {
+      padding: 15px;
+    }
+  
+    nav {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    main {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .product {
+      width: 80%; /* Adjust product width for mobile */
+      margin: 10px 0;
+    }
+  
+    footer {
+      font-size: 12px;
+    }
+  }
+  
+  /* Media Query for Extra Small Mobile (up to 480px) */
+  @media (max-width: 480px) {
+    body {
+      font-size: 14px;
+    }
+  
+    header {
+      padding: 10px;
+    }
+  
+    nav {
+      font-size: 14px;
+    }
+  
+    .product {
+      width: 90%; /* Full-width product on small screens */
+    }
+  }
